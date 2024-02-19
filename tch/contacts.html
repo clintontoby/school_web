@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="about.html">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div style="display: flex; flex-direction: row; gap: 15px; align-items: center;">
+                 <a href="#"><img src="images/logo.png" alt=""></a>
+                 <h1>Chrisland University</h1><h1>Accounting</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h2>Contact Us</h2>
+      </section>
+
+
+      <section class="location">
+        <iframe src="" frameborder="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d65827.57602372309!2d3.395072220300772!3d7.148675001874494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a356dd3b47bd1%3A0x763f92c3df2f5886!2sChrisland%20University%2C%20Abeokuta!5e0!3m2!1sen!2sng!4v1707702240626!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section class="contact-us">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house fa-beat"></i>
+                <span>
+                    <h3>Ajebo Road after FMC.</h3>
+                    <p>Abeokuta, Ogun state. 23409</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone fa-beat"></i>
+                <span>
+                   <h3>08132663928, 08180530797</h3>
+                    <p>Monday to Saturday, </p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope fa-beat"></i>
+                <span>
+                   <h3>admission@chrislanduniversity.edu.ng
+                    chrislandadmin@chrislanduniversity.edu.ng</h3>
+                    <p>Email us your query </p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handle.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name"required>
+                <input type="email" name="email" placeholder="Enter Your Email address" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea  rows="8" name="message" placeholder="Message"required></textarea>
+                <button type="submit" class="hero-btn blue-btn">Send Message</button>
+            </form>
+        </div>
+      </section>
+   
+    </div>
+        
+   <script>
+        var navLinks = document.getElementById("navLinks");function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200pxs";
+        }
+    </script>
+</body>
+</html>

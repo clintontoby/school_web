@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    /* background-image: url(img/hys_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+body #board{
+    font-size: 80px;
+    color: #fff;
+    margin-left: 30px;
+    text-shadow: 10px 10px 15px black;;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(19, 17, 17);
+    width: 20vw;
+    height: 100vh;
+}
+
+header a {
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+body header #culogo {
+    width: 265px;
+    height: 120px;
+}
+
+body #cloud {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.247);
+    /* margin-left: 20vw; */
+    display: flex;
+    position: relative;
+}
+
+body #cloud #box {
+    position: absolute;
+    width: 63vw;
+    height: 67vh;
+    background-color: #fff;
+    top: 30vh;
+    right: 15vw;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body #cloud #box #pic img {
+    width: 25vw;
+    height: 50vh;
+}
+
+body #cloud #box #pic {
+    width: 25vw;
+    height: 50vh;
+    padding: 5px;
+    margin-left: 10px;
+    margin-left: 17px;
+    border-radius: 7px;
+    background-color: rgb(179, 41, 41);
+    /* border: 1px solid #fff; */
+    box-shadow: 5px 5px 5px black;
+}
+
+body #cloud #box #coord {
+    margin-left: 15px;
+}
